@@ -21,7 +21,7 @@ The scanner plays a crucial role in preparing the input for further processing b
 #### You Can Find Both Short Cuts of the exe files in Launcher Folder if not working so you can find Parser .exe File in (ParseTree\Parser\bin\Debug\Parser.exe) And Scanner.exe in (ParseTree\dist\Debug\MinGW-Windows\compiler_project.exe)  
 
 # VIP Note: 
-#### The Tokens File Is Stored In (D:\Compiler Project\ParseTree) and Source File Must Be In Either The Location You Choose Or In This Location (D:\Compiler Project\ParseTree\launcher)
+#### The Tokens File Is Stored In (D:\Compiler Project\ParseTree) or The Location You Choose and Source File Must Be In Either The Location You Choose Or In This Location (D:\Compiler Project\ParseTree\launcher)
 
 # Written Language :
 - The Parser Is Written With C# 
