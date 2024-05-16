@@ -1,5 +1,5 @@
 # Description :
-The project is Semi Compiler That is Divieded into two seperated project Parser and Scanner 
+The project is Semi Compiler That is Divided into two separated project Parser and Scanner 
 ### Parser:
 The parser is a crucial component of the project responsible for analyzing the structure of input data or code according to a specified grammar or set of rules. It takes the output from the scanner (or tokenizer) and processes it further to understand the relationships and meanings within the input. The parser typically generates a data structure, such as a parse tree or an abstract syntax tree (AST), representing the hierarchical structure of the input.
 The parser will likely perform tasks such as:
