@@ -18,7 +18,10 @@ The parser is often a fundamental component in compilers, interpreters, and othe
 The scanner plays a crucial role in preparing the input for further processing by the parser. Its efficiency and accuracy directly impact the performance and reliability of your project, especially in handling large volumes of input data or code.
 
 # How To Run :
-#### You Can Find Both Short Cuts of the exe files in Launcher Folder if not working so you can find Parser .exe File in (Parser\Parser\bin\Debug\Parser.exe) And Scanner.exe in (Parser\dist\Debug\MinGW-Windows\compiler_project.exe)  
+#### You Can Find Both Short Cuts of the exe files in Launcher Folder if not working so you can find Parser .exe File in (ParseTree\Parser\bin\Debug\Parser.exe) And Scanner.exe in (ParseTree\dist\Debug\MinGW-Windows\compiler_project.exe)  
+
+# VIP Note: 
+#### The Tokens File Is Stored In (D:\Compiler Project\ParseTree) and Source File Must Be In Either The Location You Choose Or In This Location (D:\Compiler Project\ParseTree\launcher)
 
 # Written Language :
 - The Parser Is Written With C# 
