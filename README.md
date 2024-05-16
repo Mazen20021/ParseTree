@@ -38,11 +38,13 @@ The scanner plays a crucial role in preparing the input for further processing b
 ### Parser
 #### Choosing Tokens File
 ![1](https://github.com/Mazen20021/ParseTree/assets/131156076/157ffe33-8e2d-4b15-8215-2d3977027f6d)
-#### Drawing Tree Pic 1
+#### Saving Tree in a File
 ![2](https://github.com/Mazen20021/ParseTree/assets/131156076/ff80b383-a476-4a89-8620-7d5fff66b684)
-#### Drawing Tree Pic 2
+#### Drawing Tree
 ![3](https://github.com/Mazen20021/ParseTree/assets/131156076/90bc7c74-87a4-4049-90b0-fdb3b21671e7)
 
 ### Scanner 
+#### Changing Source File Location
 ![scanner 1](https://github.com/Mazen20021/ParseTree/assets/131156076/841cb3b5-241e-4951-a40b-c09562c3d46b)
+#### Changing Target File Location
 ![scanner 2](https://github.com/Mazen20021/ParseTree/assets/131156076/e8cd29cc-5d2a-4ffd-b133-5a45dd112ac6)
