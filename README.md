@@ -30,9 +30,11 @@ The scanner plays a crucial role in preparing the input for further processing b
 
 # Snap Shots :
 ### Parser
-
+#### Choosing Tokens File
 ![1](https://github.com/Mazen20021/Parser/assets/131156076/9f5f0f41-e4f8-4c3d-8a60-a840851de0a0)
+#### Drawing Tree Pic 1
 ![2](https://github.com/Mazen20021/Parser/assets/131156076/94583abd-0f05-4c61-87ad-dc3996ebd062)
+#### Drawing Tree Pic 2
 ![3](https://github.com/Mazen20021/Parser/assets/131156076/cf90f8c5-9880-4b47-a2f0-3c15ac71bbbd)
 
 ### Scanner 
