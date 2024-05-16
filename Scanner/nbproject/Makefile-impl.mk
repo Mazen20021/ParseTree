@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Compiler Project
+PROJECTNAME=Scanner
 
 # Active Configuration
 DEFAULTCONF=Debug

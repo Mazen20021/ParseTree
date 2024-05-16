@@ -865,7 +865,7 @@ namespace Parser
         }
         public void create_target_file(TreeNode rootNode)
         {
-            string targetpath = "D://Compiler Project//Target.txt";
+            string targetpath = "D://Compiler Project//ParseTree//Target.txt";
             try
             {
                 using (FileStream target = new FileStream(targetpath, FileMode.Create, FileAccess.Write))

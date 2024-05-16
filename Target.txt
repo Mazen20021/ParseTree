@@ -66,6 +66,37 @@ Stmt
 					factor
 						id
 							x
+			=
+			exp
+				term
+					factor
+						id
+							x
+			+
+			exp
+				term
+					factor
+						digit
+							1
+			;
+		}
+	while_stmt
+		(
+		cond
+			id
+				x
+			op
+				<
+			exp
+				term
+					factor
+						digit
+							4
+		)
+		{
+		stmts
+			id
+				x
 			op
 				+
 			op

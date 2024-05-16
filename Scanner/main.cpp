@@ -48,13 +48,13 @@ void menu() {
                     sc.printing(ifile, ofile);
                 }
             } else {
-                ifile = "D://Compiler Project//launcher//Source File.txt";
+                ifile = "D://Compiler Project//ParseTree//launcher//Source File.txt";
                 if (location_is_changed_token) {
                     cout<<"Tokens Will Be Created At ["<<ofile<<"] \n";
                     cout<<"Source Must Be Created At ["<<ifile<<"] \n";
                     sc.printing(ifile, ofile);
                 } else {
-                    ofile = "D://Compiler Project//Tokens.txt";
+                    ofile = "D://Compiler Project//ParseTree//Tokens.txt";
                     cout<<"Tokens Will Be Created At ["<<ofile<<"] \n";
                     cout<<"Source Must Be Created At ["<<ifile<<"] \n";
                     sc.printing(ifile, ofile);

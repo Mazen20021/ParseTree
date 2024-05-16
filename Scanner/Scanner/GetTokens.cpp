@@ -217,7 +217,7 @@ void printing(const string& inputFile, const string& outputFile) {
     }
     cout<<"Reading Source File ...\n";
     // Open output file
-    ofstream outFile("D://Compiler Project//tokens_with_no_details.txt");
+    ofstream outFile("D://Compiler Project//ParseTree//tokens_with_no_details.txt");
     ofstream outFiletokens(outputFile);
     if (!outFile) {
         cerr << "Error: Unable to open output file Creating new One...\n" << endl;
