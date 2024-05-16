@@ -37,12 +37,12 @@ The scanner plays a crucial role in preparing the input for further processing b
 # Snap Shots :
 ### Parser
 #### Choosing Tokens File
-![1](https://github.com/Mazen20021/Parser/assets/131156076/9f5f0f41-e4f8-4c3d-8a60-a840851de0a0)
+![1](https://github.com/Mazen20021/ParseTree/assets/131156076/157ffe33-8e2d-4b15-8215-2d3977027f6d)
 #### Drawing Tree Pic 1
-![2](https://github.com/Mazen20021/Parser/assets/131156076/94583abd-0f05-4c61-87ad-dc3996ebd062)
+![2](https://github.com/Mazen20021/ParseTree/assets/131156076/ff80b383-a476-4a89-8620-7d5fff66b684)
 #### Drawing Tree Pic 2
-![3](https://github.com/Mazen20021/Parser/assets/131156076/cf90f8c5-9880-4b47-a2f0-3c15ac71bbbd)
+![3](https://github.com/Mazen20021/ParseTree/assets/131156076/90bc7c74-87a4-4049-90b0-fdb3b21671e7)
 
 ### Scanner 
-![scanner 2](https://github.com/Mazen20021/Parser/assets/131156076/9801d5da-1f83-40e5-afec-74973d4f9ca4)
-![scanner](https://github.com/Mazen20021/Parser/assets/131156076/d9f19193-04f8-4758-8193-f6d203ff11d0)
+![scanner 1](https://github.com/Mazen20021/ParseTree/assets/131156076/841cb3b5-241e-4951-a40b-c09562c3d46b)
+![scanner 2](https://github.com/Mazen20021/ParseTree/assets/131156076/e8cd29cc-5d2a-4ffd-b133-5a45dd112ac6)
