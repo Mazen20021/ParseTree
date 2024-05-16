@@ -45,6 +45,6 @@ The scanner plays a crucial role in preparing the input for further processing b
 
 ### Scanner 
 #### Changing Source File Location
-![scanner 1](https://github.com/Mazen20021/ParseTree/assets/131156076/841cb3b5-241e-4951-a40b-c09562c3d46b)
-#### Changing Target File Location
-![scanner 2](https://github.com/Mazen20021/ParseTree/assets/131156076/e8cd29cc-5d2a-4ffd-b133-5a45dd112ac6)
+![scanner 1](https://github.com/Mazen20021/ParseTree/assets/131156076/90728863-6738-4a38-bf89-8c2618c07ea4)
+#### Changing Target File Locating
+![scanner 2](https://github.com/Mazen20021/ParseTree/assets/131156076/561de433-7514-492b-97e8-d4be3b74872e)
