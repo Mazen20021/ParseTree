@@ -7,7 +7,7 @@ The parser will likely perform tasks such as:
 #### Semantic Analysis: Verifying the correctness of the input beyond its syntax, such as variable declarations, type checking, etc.
 #### Error Handling: Detecting and reporting syntax or semantic errors in the input.
 #### AST Generation: Constructing an abstract representation of the input that can be used for further processing or interpretation.
-The parser is often a fundamental component in compilers, interpreters, and other language processing tools. Its accuracy and efficiency significantly impact the performance and usability of your project.
+The parser is often a fundamental component in compilers, interpreters, and other language processing tools. Its accuracy and efficiency significantly impact the performance and usability
 
 ### Scanner (Tokenizer):
 The scanner, also known as the tokenizer or lexer, is the initial stage of the language processing pipeline. Its primary function is to break down the input stream of characters into meaningful tokens or lexemes, which are the smallest units of syntax in your language or data format.The scanner will typically perform the following tasks:
