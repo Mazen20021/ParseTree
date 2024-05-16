@@ -39,6 +39,7 @@ namespace Parser
             this.Fileloc = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.TokensLoc = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@ namespace Parser
             // 
             // redraw
             // 
-            this.redraw.Location = new System.Drawing.Point(725, 3);
+            this.redraw.Location = new System.Drawing.Point(1079, 5);
             this.redraw.Name = "redraw";
             this.redraw.Size = new System.Drawing.Size(103, 44);
             this.redraw.TabIndex = 7;
@@ -81,7 +82,7 @@ namespace Parser
             // 
             this.tokenscheck.AutoSize = true;
             this.tokenscheck.Enabled = false;
-            this.tokenscheck.Location = new System.Drawing.Point(587, 17);
+            this.tokenscheck.Location = new System.Drawing.Point(587, 19);
             this.tokenscheck.Name = "tokenscheck";
             this.tokenscheck.Size = new System.Drawing.Size(132, 17);
             this.tokenscheck.TabIndex = 5;
@@ -160,6 +161,7 @@ namespace Parser
         private System.Windows.Forms.TreeView treeView1;
         public System.Windows.Forms.RichTextBox FeedBack;
         private System.Windows.Forms.Button redraw;
+        public System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

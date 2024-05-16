@@ -7,8 +7,9 @@
 #include "Scanner/GetTokens.Cpp";
 
 using namespace std;
-string ofile , ifile;
-string new_Srcfile_loc , new_Tokenfile_loc;
+string ofile = "D://Compiler Project//ParseTree//launcher//Tokens File.txt";
+string ifile = "D://Compiler Project//ParseTree//launcher//Source File.txt";
+string new_Srcfile_loc;
 bool location_is_changed_src = false;
 bool location_is_changed_token = false;
 using namespace std;
@@ -18,18 +19,19 @@ void change_loc_src(const string& loc) {
     location_is_changed_src = true;
 }
 
-void change_loc_token(const string& loc) {
-    ofile = loc;
-    location_is_changed_token = true;
-}
-
+void change_token_loc(const string& new_loc)
+    {
+        ofile = new_loc;
+        location_is_changed_token = true;
+    }
 void menu() {
     int choice;
     cout << "Welcome To Scanner Application\n";
     cout << "1- Get Tokens\n";
     cout << "2- Where To Source File And Token Are Located ? \n";
     cout << "3- Locate Source File \n";
-    cout << "4- Exit\n";
+    cout << "4- Locate Token File \n";
+    cout << "5- Exit\n";
     cout << "User Input: ";
     cin >> choice;
 
@@ -42,19 +44,17 @@ void menu() {
                     cout<<"Source Must Be Created At ["<<ifile<<"] \n";
                     sc.printing(ifile, ofile);
                 } else {
-                    ofile = "D://Compiler Project//Tokens.txt";
                     cout<<"Tokens Will Be Created At ["<<ofile<<"] \n";
                     cout<<"Source Must Be Created At ["<<ifile<<"] \n";
                     sc.printing(ifile, ofile);
                 }
             } else {
-                ifile = "D://Compiler Project//ParseTree//launcher//Source File.txt";
+               
                 if (location_is_changed_token) {
                     cout<<"Tokens Will Be Created At ["<<ofile<<"] \n";
                     cout<<"Source Must Be Created At ["<<ifile<<"] \n";
                     sc.printing(ifile, ofile);
                 } else {
-                    ofile = "D://Compiler Project//ParseTree//Tokens.txt";
                     cout<<"Tokens Will Be Created At ["<<ofile<<"] \n";
                     cout<<"Source Must Be Created At ["<<ifile<<"] \n";
                     sc.printing(ifile, ofile);
@@ -76,17 +76,17 @@ void menu() {
         case 2:
             if(location_is_changed_src)
             {
-                cout << "Source File is in ["<<new_Srcfile_loc<<"] \n";
+                cout << "Source File is in ["<<ifile<<"] \n";
             }else
             {
-                cout << "Source File is in [D://Compiler Project//launcher//Source File.txt] \n";
+                cout << "Source File is in ["<<ifile<<"] \n";
             }
             if(location_is_changed_token)
             {
-                cout << "Token File will be stored in ["<<new_Tokenfile_loc<<"] \n";
+                cout << "Token File will be stored in ["<<ofile<<"] \n";
             }else
             {
-                cout << "Source File is in [D://Compiler Project//Tokens.txt] \n";
+                cout << "Source File is in ["<<ofile<<"] \n";
             }
             menu();
             break;
@@ -111,6 +111,27 @@ void menu() {
             break;
         }
         case 4:
+        {
+            char choice_loc ;
+            string new_location_token = "";
+            cin.ignore();
+            cout << "Enter The Token File Location[Keep In Mind That The Location Should Follow This Format 'E://your location//file_name.txt']: \n";
+            cout << "User Input: ";
+            getline(cin, new_location_token);
+            cout << "The Entered Location Is: [" << new_location_token << "] Is it Correct y/n ?\n";
+            cout << "User Input: ";
+            cin>>choice_loc;
+            if (choice_loc == 'y') {
+                cout << "You New Location Is Stored ... Returning to Menu ...\n";
+                change_token_loc(new_location_token);
+                menu();
+            } else {
+                cout << "Nothing Changed Returning to Menu ... \n";
+                menu();
+            }
+            break;
+        }
+        case 5:
             return;
         default:
             cout << "Invalid Input Try Again\n";
@@ -118,6 +139,7 @@ void menu() {
             break;
     }
 }
+
 
 int main() {
     menu();

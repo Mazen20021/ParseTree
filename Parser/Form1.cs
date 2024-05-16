@@ -248,6 +248,10 @@ namespace Parser
 
             FeedBack.Text += ("Tokens count: " + Tokens.Count + "\n"); // Debugging statement
 
+            saveFileDialog1.Filter = "Text files (*.txt)|*.txt";
+            saveFileDialog1.ShowDialog();
+            parseTree.set_loc(saveFileDialog1.FileName.ToString());
+
             treeView1.Nodes.Clear();
             treeView1.Nodes.Add(parseTree.ToTreeNode(parseTree.root));
             if(parseTree.check_tree())
@@ -271,6 +275,10 @@ namespace Parser
             Fileloc.Text = "";
             Tokens = null;
             see_check();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
         }
     }
 }

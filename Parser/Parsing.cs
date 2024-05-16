@@ -24,6 +24,7 @@ namespace Parser
     }
     public class ParseTree
     {
+        string Target_loc;
         public ParseTreeNode root;
         public List<string> tokentype = new List<string> { };
 
@@ -32,6 +33,7 @@ namespace Parser
             tokentype = tokentypes;
             root = new ParseTreeNode("Stmt");
         }
+        public ParseTree(string location){ Target_loc = location; }
         int index = 0;
         bool drawn = false;
         bool ifdrawn = false;
@@ -863,12 +865,16 @@ namespace Parser
             create_target_file(treeNode);
             return treeNode;
         }
+        public void set_loc(string new_loc)
+        {
+            Target_loc = new_loc;
+        }
         public void create_target_file(TreeNode rootNode)
         {
-            string targetpath = "D://Compiler Project//ParseTree//Target.txt";
+           
             try
             {
-                using (FileStream target = new FileStream(targetpath, FileMode.Create, FileAccess.Write))
+                using (FileStream target = new FileStream(Target_loc, FileMode.Create, FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(target))
                 {
                     WriteTreeNodeToFile(rootNode, writer, 0);
