@@ -22,8 +22,19 @@ The scanner plays a crucial role in preparing the input for further processing b
 ### Scanner Is Written With C++
 
 # Our Team :
-### Mazen Ahmed[https://github.com/Mazen20021]
-### Mohamed Magdy[https://github.com/mohamedmagdyali-lab]
-### Kareem Amr[https://github.com/silentmug]
-### Mohamed Essam[https://github.com/MohamedEssam70]
-### Mahmoud Rabea[https://github.com/MahmoudRabea20]
+### [Mazen Ahmed](https://github.com/Mazen20021)
+### [Mohamed Magdy](https://github.com/mohamedmagdyali-lab)
+### [Kareem Amr](https://github.com/silentmug)
+### [Mohamed Essam](https://github.com/MohamedEssam70)
+### [Mahmoud Rabea](https://github.com/MahmoudRabea20)
+
+# Snap Shots :
+### Parser
+
+![2](https://github.com/Mazen20021/Parser/assets/131156076/94583abd-0f05-4c61-87ad-dc3996ebd062)
+![1](https://github.com/Mazen20021/Parser/assets/131156076/758397f6-5194-4f17-b152-f2b048fef06a)
+![3](https://github.com/Mazen20021/Parser/assets/131156076/cf90f8c5-9880-4b47-a2f0-3c15ac71bbbd)
+
+### Scanner 
+![scanner 2](https://github.com/Mazen20021/Parser/assets/131156076/9801d5da-1f83-40e5-afec-74973d4f9ca4)
+![scanner](https://github.com/Mazen20021/Parser/assets/131156076/d9f19193-04f8-4758-8193-f6d203ff11d0)
