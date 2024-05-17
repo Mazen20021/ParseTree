@@ -34,7 +34,7 @@ The scanner plays a crucial role in preparing the input for further processing b
 ### [Mohamed Essam](https://github.com/MohamedEssam70)
 ### [Mahmoud Rabea](https://github.com/MahmoudRabea20)
 
-# Snap Shots :
+# App Shots :
 ### Parser
 #### Choosing Tokens File
 ![1](https://github.com/Mazen20021/ParseTree/assets/131156076/157ffe33-8e2d-4b15-8215-2d3977027f6d)
