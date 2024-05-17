@@ -30,7 +30,7 @@ The scanner plays a crucial role in preparing the input for further processing b
 ### Parser :
 - Windows 7 or higher
 - Maximum 1GB Ram
-- .net 4.5 or Higher
+- [.net 4.5 or Higher](https://www.microsoft.com/en-eg/download/details.aspx?id=30653)
 - No Graphic Card Required 
 
 # VIP Note : 
