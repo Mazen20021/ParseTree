@@ -75,7 +75,7 @@ namespace Parser
             this.treeView1.ItemHeight = 20;
             this.treeView1.Location = new System.Drawing.Point(13, 51);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(1346, 567);
+            this.treeView1.Size = new System.Drawing.Size(1346, 611);
             this.treeView1.TabIndex = 6;
             // 
             // tokenscheck
@@ -92,10 +92,10 @@ namespace Parser
             // FeedBack
             // 
             this.FeedBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FeedBack.Location = new System.Drawing.Point(13, 624);
+            this.FeedBack.Location = new System.Drawing.Point(13, 662);
             this.FeedBack.Name = "FeedBack";
             this.FeedBack.ReadOnly = true;
-            this.FeedBack.Size = new System.Drawing.Size(1343, 187);
+            this.FeedBack.Size = new System.Drawing.Size(1343, 149);
             this.FeedBack.TabIndex = 4;
             this.FeedBack.Text = "";
             // 

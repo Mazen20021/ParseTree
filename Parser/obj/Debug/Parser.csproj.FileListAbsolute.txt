@@ -36,3 +36,17 @@ D:\Compiler Project\ParseTree\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.c
 D:\Compiler Project\ParseTree\Parser\obj\Debug\Parser.csproj.CopyComplete
 D:\Compiler Project\ParseTree\Parser\obj\Debug\Parser.exe
 D:\Compiler Project\ParseTree\Parser\obj\Debug\Parser.pdb
+D:\Others\Compiler Project\ParseTree\Parser\bin\Debug\Parser.exe.config
+D:\Others\Compiler Project\ParseTree\Parser\bin\Debug\Parser.exe
+D:\Others\Compiler Project\ParseTree\Parser\bin\Debug\Parser.pdb
+D:\Others\Compiler Project\ParseTree\Parser\bin\Debug\Aga.Controls.dll
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.csproj.AssemblyReference.cache
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.Form1.resources
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.Properties.Resources.resources
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.Tree.resources
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.csproj.GenerateResource.cache
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.csproj.CoreCompileInputs.cache
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.csproj.CopyComplete
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.exe
+D:\Others\Compiler Project\ParseTree\Parser\obj\Debug\Parser.pdb
+D:\Others\Compiler Project\ParseTree\Parser\bin\Debug\Graphviz.dll

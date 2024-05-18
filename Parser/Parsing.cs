@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using System.IO;
-
+using System.Drawing;
+using System.Threading;
 namespace Parser
 {
     public class ParseTreeNode
     {
         public string Value { get; }
         public List<ParseTreeNode> Children { get; }
+        public int Width { get; set; }
 
         public ParseTreeNode(string value)
         {
             Value = value;
             Children = new List<ParseTreeNode>();
+            Width = 20;
         }
 
         public void AddChild(ParseTreeNode child)
@@ -104,6 +107,7 @@ namespace Parser
 
                 switch (tokentype[i])
                 {
+
                     case "IF":
                         index = i;
 
@@ -855,6 +859,57 @@ namespace Parser
             }
             drawn = true;
         }
+        void CalculateWidth(ParseTreeNode node, int padding)
+        {
+            if (node.Children.Count == 0)
+            {
+                node.Width = 50; // Base width for leaf nodes
+            }
+            else
+            {
+                node.Width = 0;
+                foreach (var child in node.Children)
+                {
+                    CalculateWidth(child, padding);
+                    node.Width += child.Width + padding; // Add padding to each child width
+                }
+                node.Width -= padding; // Remove extra padding added after the last child
+                node.Width = Math.Max(50, node.Width); // Ensure the node has at least a base width
+            }
+        }
+
+        void DrawNode(Graphics g, ParseTreeNode node, float x, float y, float padding)
+        {
+            float nodeRadius = 30; // Radius of the node circle
+            float nodeDiameter = nodeRadius * 2;
+
+            // Draw the node as a circle
+            g.FillEllipse(Brushes.LightBlue, x - nodeRadius, y - nodeRadius, nodeDiameter, nodeDiameter);
+            g.DrawEllipse(Pens.Black, x - nodeRadius, y - nodeRadius, nodeDiameter, nodeDiameter);
+
+            // Draw the node text
+            StringFormat sf = new StringFormat();
+            sf.Alignment = StringAlignment.Center;
+            sf.LineAlignment = StringAlignment.Center;
+            g.DrawString(node.Value, SystemFonts.DefaultFont, Brushes.Black, x, y, sf);
+
+            float childX = x - node.Width / 2 + nodeRadius; // Center children under the parent node
+            float childY = y + 2 * nodeRadius + padding; // Move down for children with padding
+
+            foreach (var child in node.Children)
+            {
+                float childNodeX = childX + child.Width / 2;
+
+                // Draw a line from this node to the child node
+                g.DrawLine(Pens.Black, x, y + nodeRadius, childNodeX, childY - nodeRadius);
+
+                // Draw the child node
+                DrawNode(g, child, childNodeX, childY, padding);
+
+                childX += child.Width + padding; // Increase childX by child width + padding
+            }
+        }
+
         public TreeNode ToTreeNode(ParseTreeNode node)
         {
             TreeNode treeNode = new TreeNode(node.Value);
@@ -863,8 +918,65 @@ namespace Parser
                 treeNode.Nodes.Add(ToTreeNode(child));
             }
             create_target_file(treeNode);
+            draw_tree();
             return treeNode;
         }
+        public void draw_tree()
+        {
+            SaveTreeImage(Target_loc + ".png", 4200, 850, 40);
+        }
+
+        public void SaveTreeImage(string filePath, int desiredWidth, int height, float padding)
+        {
+            // Calculate the actual width of the tree
+            int actualWidth = CalculateActualTreeWidth(root, padding);
+
+            // Calculate the scaling factor to fit the tree within the desired width
+            float scale = (float)desiredWidth / actualWidth;
+
+            // Adjust the height based on the scaling factor
+            int scaledHeight = (int)(height * scale);
+
+            // Scale down the padding as well
+            float scaledPadding = padding * scale;
+
+            // Create the bitmap with the desired dimensions
+            using (Bitmap bmp = new Bitmap(desiredWidth, scaledHeight))
+            using (Graphics g = Graphics.FromImage(bmp))
+            {
+                g.Clear(Color.White);
+
+                // Draw the scaled tree
+                DrawTree(g, scaledPadding);
+
+                // Save the image
+                bmp.Save(filePath);
+            }
+        }
+
+        private int CalculateActualTreeWidth(ParseTreeNode node, float padding)
+        {
+            if (node.Children.Count == 0)
+            {
+                return 50;
+            }
+            else
+            {
+                int width = 0;
+                foreach (var child in node.Children)
+                {
+                    width += CalculateActualTreeWidth(child, padding) + (int)padding;
+                }
+                width -= (int)padding;
+                return Math.Max(50, width); 
+            }
+        }
+        public void DrawTree(Graphics g, float padding)
+        {
+            CalculateWidth(root, (int)padding);
+            DrawNode(g, root, root.Width / 2, 30, padding);
+        }
+
         public void set_loc(string new_loc)
         {
             Target_loc = new_loc;
