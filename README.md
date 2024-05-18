@@ -1,4 +1,4 @@
-# Description 🌟
+# Project description 🌟
 #### The project is Semi Compiler That is Divided into two separated project Parser and Scanner 
 
 ### Parser 🌳
