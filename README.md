@@ -55,8 +55,6 @@ The scanner plays a crucial role in preparing the input for further processing b
 ![2](https://github.com/Mazen20021/ParseTree/assets/131156076/ff80b383-a476-4a89-8620-7d5fff66b684)
 #### Drawing Tree
 ![3](https://github.com/Mazen20021/ParseTree/assets/131156076/90bc7c74-87a4-4049-90b0-fdb3b21671e7)
-#### Parse Tree
-![4](https://drive.google.com/file/d/1toNJhNQK8a-L5hl1pMjEjqjZEcHcSiPZ/view?usp=sharing.png)
 
 ### Scanner 
 #### Changing Source File Location
