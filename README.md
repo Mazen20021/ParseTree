@@ -48,7 +48,7 @@ The scanner plays a crucial role in preparing the input for further processing b
 ### [Mahmoud Rabea](https://github.com/MahmoudRabea20)
 
 # App Shots 📸
-### Parser
+### Parser 🌳
 #### Choosing Tokens File
 ![1](https://github.com/Mazen20021/ParseTree/assets/131156076/157ffe33-8e2d-4b15-8215-2d3977027f6d)
 #### Saving Tree in a File
@@ -58,7 +58,7 @@ The scanner plays a crucial role in preparing the input for further processing b
 #### Tree
 ![tree txt](https://github.com/Mazen20021/ParseTree/assets/131156076/fa8fde3e-dd77-40de-a277-2ac5af7a5e92)
 
-### Scanner 
+### Scanner 🔍
 #### Changing Source File Location
 ![scanner 1](https://github.com/Mazen20021/ParseTree/assets/131156076/46caa7d9-9650-4002-beee-9e69db09d554)
 #### Changing Target File Locating
