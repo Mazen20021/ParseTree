@@ -42,7 +42,7 @@ The scanner plays a crucial role in preparing the input for further processing b
 
 # Our Team 👥
 ### [Mazen Ahmed](https://github.com/Mazen20021)
-### [Mohamed Magdy](https://github.com/mohamedmagdyali-lab)
+### [Mohamed Magdy](https://github.com/MohammedMagdy404)
 ### [Kareem Amr](https://github.com/silentmug)
 ### [Mohamed Essam](https://github.com/MohamedEssam70)
 ### [Mahmoud Rabea](https://github.com/MahmoudRabea20)
